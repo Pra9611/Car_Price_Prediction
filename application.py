@@ -7,7 +7,7 @@ import numpy as np
 app = Flask(__name__)
 cors=CORS(app)
 model=pickle.load(open('LinearRegressionModel.pkl','rb'))
-car = pd.read_csv('cleaned_Car_data.csv')
+car = pd.read_csv('Cleaned_Car_data.csv')
 
 @app.route('/')
 def index():
